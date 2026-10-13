@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "kdf": "PBKDF2",
+  "hash": "SHA-256",
+  "iterations": 310000,
+  "salt": "akCxGBa2AnfKEDW9L18QDD0EuKYa5Rhq8ARAVRED/fY=",
+  "cipher": "AES-GCM",
+  "iv": "KNrjP1zX+YL1IhFL",
+  "payload": "vault.bin",
+  "ciphertextSha256": "1001fbf53a63c547943916f7e405ad9a8d987049c04c29241348115f3409f75d",
+  "ciphertextBytes": 3648112
+}

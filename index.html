@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob:; script-src 'self' blob: 'unsafe-inline'; style-src 'self' blob: 'unsafe-inline'; img-src 'self' blob: data:; media-src blob:; connect-src 'self' blob:; frame-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>RoboAssembly · 实验观察台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%231a7667' d='M3 3h12v26H3zM18 3h11v11H18z'/%3E%3Cpath fill='%2396b7a5' d='M18 17h11v12H18z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="gate.css">
+  <script src="gate.js" defer></script>
+</head>
+<body>
+  <main id="gate" class="gate">
+    <div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>NYU<br><strong>RoboAssembly</strong></span></div>
+    <section class="entry" aria-labelledby="entry-title">
+      <p class="eyebrow">RESEARCH NOTEBOOK</p>
+      <h1 id="entry-title">进入实验观察台<span>。</span></h1>
+      <p class="intro">从一次装配，理解每一步发生了什么。</p>
+      <form id="unlock-form">
+        <label for="password">访问密码</label>
+        <div class="password-row"><input id="password" type="password" autocomplete="current-password" required spellcheck="false" autofocus placeholder="输入访问密码"><button id="toggle-password" type="button" aria-label="显示密码" aria-pressed="false">显示</button></div>
+        <button id="unlock" class="primary" type="submit">打开看板 <span aria-hidden="true">↗</span></button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="hint">无需 ChatGPT 或 GitHub 账号。刷新页面后需重新输入密码。</p>
+      <noscript><p>请启用 JavaScript，以解锁并查看实验内容。</p></noscript>
+    </section>
+    <footer>NYU ROBOASSEMBLY <span>实验 · 工具 · 证据</span></footer>
+  </main>
+  <div id="viewer" hidden>
+    <header class="viewer-bar"><span><i aria-hidden="true"></i> RoboAssembly · 已解锁</span><button id="lock" type="button">重新锁定</button></header>
+    <iframe id="dashboard" title="RoboAssembly 实验看板" sandbox="allow-scripts allow-same-origin allow-downloads allow-popups allow-popups-to-escape-sandbox" allow="fullscreen"></iframe>
+  </div>
+</body>
+</html>
